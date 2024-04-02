@@ -21,3 +21,14 @@
     /*OR bottom right*/
     background-size: 100% 2px;
 }
+
+.guess-icon {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s !important;
+    color: white;
+}
+
+.guess-icon:hover {
+    opacity: 1;
+}

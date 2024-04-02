@@ -16,7 +16,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 import './header.css'
 //
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const pages = ['Home', 'Shop', 'About', 'Contact'];
 
@@ -123,16 +123,20 @@ export default function Header() {
                                     className={'main-item-menu' + ((itemActive.toLocaleLowerCase() === page.toLocaleLowerCase() && !anotherItemHover)
                                         ? ' main-item-menu-active'
                                         : '')}
-                                    onMouseOver={()=> {setAnotherItemHover(!anotherItemHover)}}
-                                    onMouseOut={()=> {setAnotherItemHover(!anotherItemHover)}}
+                                    onMouseOver={() => { setAnotherItemHover(!anotherItemHover) }}
+                                    onMouseOut={() => { setAnotherItemHover(!anotherItemHover) }}
                                 >
                                     {page}
                                 </Typography>
                             ))}
                         </Box>
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex' }, justifyContent: 'end', alignItems: 'center' }}>
-                            <PersonOutlineOutlinedIcon sx={{ margin: '0 1rem', fontSize: '1.8rem' }} />
-                            <ShoppingCartOutlinedIcon sx={{ margin: '0 1rem', fontSize: '1.8rem' }} />
+                            <Link to={'/login'} className='guess-icon'>
+                                <PersonOutlineOutlinedIcon sx={{ margin: '0 1rem', fontSize: '1.8rem' }} />
+                            </Link>
+                            <Link to={'#'} className='guess-icon'>
+                                <ShoppingCartOutlinedIcon sx={{ margin: '0 1rem', fontSize: '1.8rem' }} />
+                            </Link>
                         </Box>
                     </Toolbar>
                 </Container>
