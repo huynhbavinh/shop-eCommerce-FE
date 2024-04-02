@@ -3,4 +3,8 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'roboto';
+  text-decoration: none;
 };
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
