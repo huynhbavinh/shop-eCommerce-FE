@@ -1,8 +1,8 @@
-import Image from '../components/Image'
+import Image from '../Image'
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import banner from '../assets/orthotic-friendly-shoes-banner.webp'
-import useJumpToView from '../hooks/useJumpToView'
+import banner from '../../assets/orthotic-friendly-shoes-banner.webp'
+import useJumpToView from '../../hooks/useJumpToView'
 
 export default function Banner() {
     const handleJumpToView = useJumpToView();

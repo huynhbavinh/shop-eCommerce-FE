@@ -1,8 +1,8 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box'
 
-import Banner from './Banner';
-import About from './About';
+import Banner from '../components/landing/LandingBanner';
+import About from '../components/landing/LandingAbout';
 
 export default function Landing() {
 

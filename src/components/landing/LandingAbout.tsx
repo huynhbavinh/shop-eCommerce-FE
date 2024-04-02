@@ -1,8 +1,8 @@
-import Image from '../components/Image'
+import Image from '../Image'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography'
-import sideImg from '../assets/orthotic-friendly-shoes-side-img.webp'
+import sideImg from '../../assets/orthotic-friendly-shoes-side-img.webp'
 
 export default function About() {
     return (
