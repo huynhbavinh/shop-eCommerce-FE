@@ -23,7 +23,6 @@ const pages = ['Home', 'Shop', 'About', 'Contact'];
 export default function Header() {
     const location = useLocation();
     const itemActive = useMemo(() => {
-        console.log(location.pathname)
         if (location.pathname === '/') {
             return 'home';
         } else {
