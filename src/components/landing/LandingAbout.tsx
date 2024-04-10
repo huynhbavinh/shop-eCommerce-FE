@@ -9,7 +9,7 @@ export default function About() {
         <>
             <Box sx={{ display: 'flex' }}>
                 <Box sx={{ flexGrow: 3 }}>
-                    <Image widthImg='100%' src={sideImg} />
+                    <Image widthImg='100%' src={sideImg} alt='ORTHOTIC FRIENDLY SHOES' />
                 </Box>
                 <Box
                     sx={{

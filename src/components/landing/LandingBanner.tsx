@@ -26,7 +26,7 @@ export default function Banner() {
                 <Box
                     component={'h2'}
                     sx={{ padding: '0.2rem 1rem' }}
-                    onClick={() => { handleJumpToView('about-page') }}
+                    onClick={() => { handleJumpToView('about-row') }}
                 >ABOUT US</Box>
             </Button>
         </>

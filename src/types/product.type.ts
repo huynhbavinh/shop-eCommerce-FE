@@ -12,7 +12,12 @@ type Product = {
     "images": Array<string>,
 }
 
-type Products = Array<Product>;
+type Products = {
+    limit: number,
+    products: Array<Product>,
+    skip: number,
+    total: number
+};
 
 export type {
     Product,
