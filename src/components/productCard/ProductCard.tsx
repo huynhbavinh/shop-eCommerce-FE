@@ -33,20 +33,41 @@ export default function MediaCard() {
                     Product Prices $
                 </Typography>
             </CardContent>
-            <Box>
-                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
-                    <Button variant="contained" color='info' sx={{ width: '70%', textTransform: 'capitalize' }}>
+            <Box className={'info'}>
+                <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
+                    <Button variant="contained" color='inherit'
+                        sx={{
+                            width: '70%', textTransform: 'capitalize', backgroundColor: 'whitesmoke', color: '#D198AB',
+                        }}>
                         Add To Cart
                     </Button>
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                    <Box typography={'light'} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center' }}>
+                    <Box typography={'light'}
+                        sx={{
+                            display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center', cursor: 'pointer',
+                            ":hover": {
+                                color:'#1c9fe3'
+                            }
+                        }}>
                         <ShareOutlinedIcon /><Box sx={{ marginLeft: '0.2rem' }}>Share</Box>
                     </Box>
-                    <Box typography={'light'} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center' }}>
+                    <Box typography={'light'}
+                        sx={{
+                            display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center', cursor: 'pointer',
+                            ":hover": {
+                                color:'#1c9fe3'
+                            }
+                        }}>
                         <InfoOutlinedIcon /><Box sx={{ marginLeft: '0.2rem' }}>Info</Box>
                     </Box>
-                    <Box typography={'light'} sx={{ display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center' }}>
+                    <Box typography={'light'}
+                        sx={{
+                            display: 'flex', flexDirection: 'row', alignItems: 'center', alignContent: 'center', cursor: 'pointer',
+                            ":hover": {
+                                color:'#1c9fe3'
+                            }
+                        }}>
                         <FavoriteBorderOutlinedIcon /><Box sx={{ marginLeft: '0.2rem' }}>Like</Box>
                     </Box>
                 </Box>

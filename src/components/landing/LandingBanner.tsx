@@ -8,7 +8,7 @@ export default function Banner() {
     const handleJumpToView = useJumpToView();
     return (
         <>
-            <Image widthImg='100%' src={banner} />
+            <Image widthImg='100%' src={banner} alt={''} />
             <Button sx={{
                 boxShadow: 3,
                 position: 'relative',
